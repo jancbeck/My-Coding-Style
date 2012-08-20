@@ -1,6 +1,27 @@
 # My Coding Style
 
+
 ## The purpose of this document is to foster a more coherent coding style in languages that I use on a daily basis (HTML, CSS, JavaScript, PHP). I came to the conclusion that both creating as well as *trying* to follow an own coding standards guide will help me become a bit of a better programmer. This document is a work in progress.
+
+
+## Contents
+
+* [Markup (HTML)](https://github.com/jancbeck/My-Coding-Style/blob/master/markup.md)
+* [Styling (CSS/LESS)](https://github.com/jancbeck/My-Coding-Style/blob/master/styling.md)
+* [Behavior (JavaScript)](https://github.com/jancbeck/My-Coding-Style/blob/master/behavior.md)
+* [Serving (PHP)](https://github.com/jancbeck/My-Coding-Style/blob/master/serving.md)
+
+
+## Conventions
+I have borrowed a little terminology convention by the NASAs [JPL Institutional Coding Standard for the C Programming Language](http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf):
+
+> The use of the verbs **shall** and **should** have the following meaning in this document. 
+> * **Shall** indicates a requirement that must be followed [...].  
+> * **Should** indicates a preference that must be addressed, but with deviations 
+> allowed, provided that an adequate justification is given for each deviation.  
+
+For prosaic reasons, *shall* and *should* are sometimes replaced by *must* and *can*.
+
 
 ## Credits
 
@@ -19,15 +40,6 @@ I have read many great style guides of the years so undeniable my own style is b
 * [WordPress Core Contributor Handbook: CSS](http://make.wordpress.org/core/handbook/coding-standards/css/)
 * [Fellowship Technology Code Standards](http://developer.fellowshipone.com/patterns/code.php)
 
-## Conventions
-I have borrowed a little terminology convention by the NASAs [JPL Institutional Coding Standard for the C Programming Language](http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf):
-
-> The use of the verbs **shall** and **should** have the following meaning in this document. 
-> * **Shall** indicates a requirement that must be followed [...].  
-> * **Should** indicates a preference that must be addressed, but with deviations 
-> allowed, provided that an adequate justification is given for each deviation.  
-
-For prosaic reasons, *shall* and *should* are sometimes replaced by *must* and *can*.
 
 ## License
 
