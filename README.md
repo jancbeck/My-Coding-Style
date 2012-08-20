@@ -19,6 +19,16 @@ I have read many great style guides of the years so undeniable my own style is b
 * [WordPress Core Contributor Handbook: CSS](http://make.wordpress.org/core/handbook/coding-standards/css/)
 * [Fellowship Technology Code Standards](http://developer.fellowshipone.com/patterns/code.php)
 
+## Conventions
+I have borrowed a little terminology convention by the NASAs [JPL Institutional Coding Standard for the C Programming Language](http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf):
+
+> The use of the verbs **shall** and **should** have the following meaning in this document. 
+> * **Shall** indicates a requirement that must be followed [...].  
+> * **Should** indicates a preference that must be addressed, but with deviations 
+> allowed, provided that an adequate justification is given for each deviation.  
+
+For prosaic reasons, *shall* and *should* are sometimes replaced by *must* and *can*.
+
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Principles of Writing Consistent, Idiomatic Web Code</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/jancbeck/My-Coding-Style" property="cc:attributionName" rel="cc:attributionURL">Jan Beck</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
