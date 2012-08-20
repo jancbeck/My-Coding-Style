@@ -8,9 +8,10 @@ I have read many great style guides of the years so undeniable my own style is b
 
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js)
 * [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
-* [Google HTML/CSS Style Guide](Google HTML/CSS Style Guide)
+* [Google HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
 * [Google Best Web Practices](https://developers.google.com/speed/docs/best-practices/rendering)
 * [JQuery Core Style Guidelines](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
+* [Github HTML Styleguide](https://github.com/styleguide/html)
 * [Github CSS Styleguide](https://github.com/styleguide/css)
 * [Github JavaScript Styleguide](https://github.com/styleguide/javascript)
 * [WordPress Coding Standards](http://codex.wordpress.org/WordPress_Coding_Standards)
