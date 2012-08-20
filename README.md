@@ -13,7 +13,7 @@
 
 
 ## Conventions
-I have borrowed a little terminology convention by the NASAs [JPL Institutional Coding Standard for the C Programming Language](http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf):
+I have borrowed a terminology convention by the NASAs [JPL Institutional Coding Standard for the C Programming Language](http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf):
 
 > The use of the verbs **shall** and **should** have the following meaning in this document. 
 > * **Shall** indicates a requirement that must be followed [...].  
@@ -25,7 +25,7 @@ For prosaic reasons, *shall* and *should* are sometimes replaced by *must* and *
 
 ## Credits
 
-I have read many great style guides of the years so undeniable my own style is based on the following spadework:
+I have read many great style guides over the years and it's undeniable that my own style is based on the following spadework:
 
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js)
 * [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
