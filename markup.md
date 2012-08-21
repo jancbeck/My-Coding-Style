@@ -121,7 +121,7 @@ Omit type attributes for stylesheets and scripts.
 
 ### Void elements
 
-Use HTML5-Syntax for `<br>`, `<hr>`, `<link>`, `<img>` and other [void elements](http://www.w3.org/TR/html-markup/syntax.html#void-element).
+Use HTML5-Syntax for `<br>`, `<hr>`, `<link>`, `<img>` and [other void elements](http://www.w3.org/TR/html-markup/syntax.html#void-element).
 
 ## 5. Semantics
 
