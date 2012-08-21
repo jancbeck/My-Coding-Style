@@ -207,10 +207,10 @@ In this case use a descriptive name of each individual module and prefix its chi
 </div>
 ```
 
-Avoid multiple unsemantic classes like this:
+Avoid multiple unsemantic and purely presentational classes like this:
 
 ``` html
-<ul class="clearfix grid grid-12 grid-borderless">
+<ul class="clearfix grid grid-12 rounded">
 ```
 
 Instead use one semantic class and attach classes using a preprocessor.
@@ -223,7 +223,7 @@ Instead use one semantic class and attach classes using a preprocessor.
 .recent-articles { 
 	.clearfix;
 	.grid(12);
-	.grid-borderless;
+	.border-radius(5px);
 }
 ``` 
 
