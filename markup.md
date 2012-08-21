@@ -34,10 +34,11 @@ Empty lines should be used to divide groups of elements when appropriate.
 ``` html
 <div class="post">
 
-	<h1>Kafka</h1>
+	<h1>Der Process</h1>
 	<p>Jemand musste <b>Josef K.</b> verleumdet haben, denn <i>ohne</i> dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
 	<p><a href="#more">weiterlesen</a></p>	
 	
+	<h2>Weitere wichtige Werke:</h2>
 	<ul>
 		<li>Beschreibung eines Kampfes, 1902-1910</li>
 		<li>Das Urteil, 1912</li>
@@ -63,7 +64,7 @@ When mixing PHP and HTML together, indent PHP blocks to match the surrounding HT
 
 		<?php endforeach; ?>
 
-	</ul>
+	</ul><!-- /.images -->
 
 <?php endif; ?>
  ```
