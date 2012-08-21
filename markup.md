@@ -104,7 +104,7 @@ You must only use this kind of identified closing tags when it would otherwise p
 
 ### Quotes
 
-Always use quotes around attributes. Prefere double quotes over single quotes. However use HTML5-Syntax for empty attributes.
+Always use quotes around attributes. Prefer double quotes over single quotes. However use HTML5-Syntax for empty attributes.
 
 ``` html
 <input type="text" name="city" disabled>
