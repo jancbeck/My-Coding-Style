@@ -24,10 +24,10 @@ All HTML pages should validate against the [W3C Validator](http://validator.w3.o
 
 ## 2. Indentation & Formatting
 
-**Spaces & Tabs**
+### Spaces & Tabs
 Indentation is done by a tab that is 4 spaces wide. 4 spaces can be used instead of a tab.
 
-**Block, Inline and Groups**
+### Block, Inline and Groups
 Block elements create new lines. Inline elements don't.
 Empty lines should be used to divide groups of elements when appropriate.  
 
@@ -35,9 +35,8 @@ Empty lines should be used to divide groups of elements when appropriate.
 <div class="post">
 
 	<h1>Kafka</h1>
-	
 	<p>Jemand musste <b>Josef K.</b> verleumdet haben, denn <i>ohne</i> dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-	<p><a href="#more">weiterlesen</a</p>	
+	<p><a href="#more">weiterlesen</a></p>	
 	
 	<ul>
 		<li>Beschreibung eines Kampfes, 1902-1910</li>
@@ -49,7 +48,7 @@ Empty lines should be used to divide groups of elements when appropriate.
 </div><!-- /.post -->
  ```
  
-**PHP in HTML**
+### PHP in HTML
 As with PHP, HTML indentation should always reflect logical structure. Use tabs and not spaces.
 
 When mixing PHP and HTML together, indent PHP blocks to match the surrounding HTML code. Closing PHP blocks should match the same indentation level as the opening block. `endif;` and `endwhile;` are preferred over curly braces.
@@ -57,13 +56,11 @@ When mixing PHP and HTML together, indent PHP blocks to match the surrounding HT
 ``` html
 <?php if ( ! have_posts() ) : ?>
    <div id="post-1" class="post">
-   
       <h1 class="entry-title">Not Found</h1>
       <div class="entry-content">
          <p>Apologies, but no results were found.</p>
          <?php get_search_form(); ?>
       </div>
-      
     </div>
 <?php endif; ?>
  ```
