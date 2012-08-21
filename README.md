@@ -13,7 +13,7 @@
 
 
 ## Conventions
-I have borrowed a terminology convention by the NASAs [JPL Institutional Coding Standard for the C Programming Language](http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf):
+I have borrowed a terminology convention from NASAs [JPL Institutional Coding Standard for the C Programming Language](http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf):
 
 > The use of the verbs **shall** and **should** have the following meaning in this document. 
 > * **Shall** indicates a requirement that must be followed [...].  
