@@ -12,17 +12,6 @@
 * [Serving (PHP)](https://github.com/jancbeck/My-Coding-Style/blob/master/serving.md)
 
 
-## Conventions
-I have borrowed a terminology convention from NASAs [JPL Institutional Coding Standard for the C Programming Language](http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf):
-
-> The use of the verbs **shall** and **should** have the following meaning in this document. 
-> * **Shall** indicates a requirement that must be followed [...].  
-> * **Should** indicates a preference that must be addressed, but with deviations 
-> allowed, provided that an adequate justification is given for each deviation.  
-
-For prosaic reasons, *shall* and *should* are sometimes replaced by *must* and *can*.
-
-
 ## Credits
 
 I have read many great style guides over the years and it's undeniable that my own style is based on the following spadework:
