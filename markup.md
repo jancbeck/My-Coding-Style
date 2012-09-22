@@ -18,7 +18,7 @@ All HTML pages should validate against the [W3C Validator](http://validator.w3.o
 ``` html
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Blog | © 2012 Jan Beck</title>
+<title>Blog | © 2012 Jan Beck</title>
  ```
 
 ## 2. Indentation & Formatting
@@ -227,10 +227,10 @@ CSS rules would target each element directly based on its class in a non-hierarc
 
 ``` css
 
-.search { /* ... */ }
-.search-title { /* ... */ }
-.search-input { /* ... */ }
-.search-submit { /* ... */ }
+.search { /* ... */ }
+.search-title { /* ... */ }
+.search-input { /* ... */ }
+.search-submit { /* ... */ }
 ```
 
 Modules should work even in another context or with different tags:
@@ -247,7 +247,7 @@ Modules should work even in another context or with different tags:
 </div>
 ```
 ``` css
-.footer .search { /* overwrite styles based on location */ }
+.footer .search { /* overwrite styles based on location */ }
 ```
 
 The example above uses the very simple module name `search`. In a more realistic environment this might target more than one module of that name.
@@ -279,7 +279,7 @@ Instead use one semantic class and attach classes using a preprocessor.
 
 ``` css
 /* using LESS */
-.recent-articles { 
+.recent-articles { 
 	.clearfix;
 	.grid(12);
 	.border-radius(5px);
