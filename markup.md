@@ -8,7 +8,6 @@
 3. Comments
 4. Attributes
 5. Semantics
-6. Accessibility 
 
 ------------------------------------------------
 
@@ -19,7 +18,7 @@ All HTML pages should validate against the [W3C Validator](http://validator.w3.o
 ``` html
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>© 2012 Jan Beck</title>
+<title>Blog | © 2012 Jan Beck</title>
  ```
 
 ## 2. Indentation & Formatting
@@ -28,8 +27,8 @@ All HTML pages should validate against the [W3C Validator](http://validator.w3.o
 Indentation is done by a tab that is 4 spaces wide. 4 spaces can be used instead of a tab.
 
 ### Block, Inline and Groups
-Block elements create new lines. Inline elements don't.
-Empty lines should be used to divide groups of elements when appropriate.  
+Block elements create new lines. Inline elements do not create new lines.
+Empty lines should be used to divide logical groups of elements when appropriate.  
 
 ``` html
 <div class="post">
@@ -42,7 +41,7 @@ Empty lines should be used to divide groups of elements when appropriate.
 	<ul>
 		<li>Beschreibung eines Kampfes, 1902-1910</li>
 		<li>Das Urteil, 1912</li>
-		<li>In der Strafkolonie, 1914</li>
+		<li><strong>In der Strafkolonie, 1914</strong></li>
 		<li>Die Verwandlung, 1916</li>
 	</ul>
 	
@@ -51,7 +50,9 @@ Empty lines should be used to divide groups of elements when appropriate.
  
 ### PHP in HTML
 
-When mixing PHP and HTML together, indent PHP blocks to match the surrounding HTML code. Closing PHP blocks should match the same indentation level as the opening block. `endif;` and `endwhile;` are preferred over curly braces.
+When mixing PHP and HTML together, indent PHP blocks to match the surrounding HTML code. Closing PHP blocks should match the same indentation level as the opening block. `endif;` and `endwhile;` are preferred over curly braces for better readability.
+
+<!-- Taken from http://developer.fellowshipone.com/patterns/code.php -->
 
 ``` html
 <?php if ( $attachments ) : ?>
@@ -68,13 +69,12 @@ When mixing PHP and HTML together, indent PHP blocks to match the surrounding HT
 
 <?php endif; ?>
  ```
-Taken from http://developer.fellowshipone.com/patterns/code.php
-
+ 
 ## 3. Comments
 
-Comments should explain code as needed, where possible.
+Comments should explain code as needed, where necessary.
 
-Comments shall be used to help identify closing tags. A slash followed by a CSS-like list of classes and ID helps to avoid a chaotic heap of anonymous closing tags at the end of a document.
+Comments shall be used to help identify closing tags. A slash followed by a CSS-like list of classes and/or IDs helps to avoid a chaotic heap of anonymous closing tags at the end of a document.
 
 ``` html
 <div class="container">
@@ -104,7 +104,7 @@ You must only use this kind of identified closing tags when it would otherwise p
 
 ### Quotes
 
-Always use quotes around attributes. Prefer double quotes over single quotes. However use HTML5-Syntax for empty attributes.
+Always use quotes around attributes. Prefer double quotes over single quotes. Use HTML5-Syntax for empty attributes.
 
 ``` html
 <input type="text" name="city" disabled>
@@ -123,6 +123,64 @@ Omit type attributes for stylesheets and scripts.
 
 Use HTML5-Syntax for `<br>`, `<hr>`, `<link>`, `<img>` and [other void elements](http://www.w3.org/TR/html-markup/syntax.html#void-element).
 
+### HTML5 elements and Accessibility
+
+Be aware of the fact that using the elements that HTML5 introduced currently do not help any machine or human better understand your site.
+So when you write code like this
+
+``` html	
+<header>
+	<!-- site name etc… -->
+</header>
+
+<section>
+	<article>
+		<!-- your main article content… -->
+	</article>
+	<aside>
+		<nav>
+			<!-- navigational elements… -->
+		</nav>
+		<form action="search.php">
+			<!-- search form… -->
+		</form>
+	</aside>
+</section>
+
+<footer>
+	<!-- footnotes… -->
+</footer>
+```
+
+you are helping nobody but instead you might run into problems with older browsers and your markup depends on JavaScript for them to understand it. Elements like `header` and `footer` are not ment to be used just once on a first-level basis but to be used everywhere recursively nested down the document (E.g. `header` could be the part in a comment below an article that shows information about the author of the comment).
+
+A better way would be to use WAI ARIA landmarks that will help screenreaders and parsing robots a lot and *already today*. 
+Landmarks are ment to signalize individual parts of your document. That means you can much better use them to structure your document and even make your classes complement them for later CSS-Styling. 
+
+``` html	
+<div role="banner" class="banner">
+	<!-- site name etc… -->
+</div>
+
+<div role="main" class="main">
+	<div role="article" class="article">
+		<!-- your main article content… -->
+	</div>
+	<div role="complementary" class="complementary">
+		<ul role="navigation" class="navigation">
+			<!-- navigational elements… -->
+		</ul>
+		<form role="search" class="search" action="search.php">
+			<!-- search form… -->
+		</form>
+	</div>
+</div>
+
+<div role="contentinfo" class="contentinfo">
+	<!-- footnotes… -->
+</div>
+```
+
 ## 5. Semantics
 
 ### IDs
@@ -139,24 +197,24 @@ Consider the following markup:
 </ul>
 ```
 
-We can use jQuery to attach a handler to all links in this menu in performant way:
+We can use jQuery to attach a handler to all links in this menu in a performant way using native browser select algorithms:
 
 ``` javascript
 $('#navigation').find('a').click(fn);
 ```
 
-Furthermore classes should be used instead of IDs.
+Furthermore classes should be used instead of IDs because they can cause problems with specificity in CSS rules later.
 
 ### Classes
 
-Classnames shall always contain dashes instead of underscores or camelCase.
+Class names shall always use dashes instead of underscores or camelCase to seperate words in them.
 
 Use a modular aproach when naming your parts:
 
 ``` html
 <div class="header">
 	
-	<form class="search" method="get" action="search.php">
+	<form class="search" action="search.php">
 		<label class="search-title" for="s">What are you looking for?</label>
 		<input class="search-input" id="s" type="text" placeholder="Type your search term" />
 		<button class="search-submit">
@@ -180,7 +238,7 @@ Modules should work even in another context or with different tags:
 ``` html
 <div class="footer">
 	
-	<form class="search" method="get" action="search.php">
+	<form class="search" action="search.php">
 		<h3 class="search-title">What are you looking for?</h3>
 		<input class="search-input" id="s" type="text" placeholder="Type your search term" />
 		<input class="search-submit" type="submit">
@@ -192,16 +250,16 @@ Modules should work even in another context or with different tags:
 .footer .search { /* overwrite styles based on location */ }
 ```
 
-The example above uses a very simple module-name `search`. In a more realistic environment this might target more than one module of that name.
+The example above uses the very simple module name `search`. In a more realistic environment this might target more than one module of that name.
 In this case use a descriptive name of each individual module and prefix its children elements.
 
 ``` html
 <div class="sidebar">
 	
-	<form class="blogsearch" method="get" action="search.php">
-		<h3 class="bs-title">What are you looking for?</h3>
-		<input class="bs-input" id="s" type="text" placeholder="Type your search term" />
-		<input class="bs-submit" type="submit">
+	<form class="usersearch" action="search.php">
+		<h3 class="us-title">Who are you looking for?</h3>
+		<input class="us-input" id="user" type="text" placeholder="User name to search for" />
+		<input class="us-submit" type="submit">
 	</form>
 
 </div>
@@ -210,50 +268,23 @@ In this case use a descriptive name of each individual module and prefix its chi
 Avoid multiple unsemantic and purely presentational classes like this:
 
 ``` html
-<ul class="clearfix grid grid-12 rounded">
+<ul class="clearfix grid grid-12 rounded">…</ul>
 ```
 
 Instead use one semantic class and attach classes using a preprocessor.
 
 ``` html
-<ul class="recent-articles">
+<ul class="recent-articles">…</ul>
 ```
 
 ``` css
+/* using LESS */
 .recent-articles { 
 	.clearfix;
 	.grid(12);
 	.border-radius(5px);
 }
 ``` 
-
-## 6. Accessibility 
-
-Value human accessibility over machine validity or semantics. Machines can adapt, update and eventually become better over time; Humans need access to information with what they have now.
-
-### Define Landmarks
-
-``` html	
-<h1 role="banner">Sitename</h1>
-
-<form role="search" method="post" action="search.php">...</form>
-
-<ul id="nav" role="navigation">
-	...
-</ul>
-
-<div id="content" role="main">
-				
-	<div id="post" role="article">
-		...
-	</div>
-	
-	<p role="complementary">
-		...
-	</p>
-	
-</div>
-```
 
 ### Forms
 
