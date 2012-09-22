@@ -5,9 +5,18 @@
 
 1. Validity
 2. Indentation
-3. Comments
-4. Attributes
-5. Semantics
+	1. Spaces & Tabs 
+	2. Block, Inline and Groups
+	3. PHP in HTML
+4. Comments
+5. Attributes
+	1. Quotes
+	2. type Attributes
+	3. Void Elements
+	4. HTML5 Elements and Accessibility
+6. Semantics
+	1. IDs
+	2. Classes
 
 ------------------------------------------------
 
@@ -119,11 +128,11 @@ Omit type attributes for stylesheets and scripts.
 <script src="js/application.js"></script>
 ```
 
-### Void elements
+### Void Elements
 
 Use HTML5-Syntax for `<br>`, `<hr>`, `<link>`, `<img>` and [other void elements](http://www.w3.org/TR/html-markup/syntax.html#void-element).
 
-### HTML5 elements and Accessibility
+### HTML5 Elements and Accessibility
 
 Be aware of the fact that using the elements that HTML5 introduced currently do not help any machine or human better understand your site.
 So when you write code like this
@@ -286,6 +295,4 @@ Instead use one semantic class and attach classes using a preprocessor.
 }
 ``` 
 
-### Forms
-
-...
+<!-- ### Forms -->
