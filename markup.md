@@ -251,12 +251,12 @@ Modules should work even in another context or with different tags:
 ```
 
 The example above uses the very simple module name `search`. In a more realistic environment this might target more than one module of that name.
-In this case use a descriptive name of each individual module and prefix its children elements.
+In this case use a descriptive name of each individual module and prefix its children elements. This allows to refactor certain modules for multiple use cases.
 
 ``` html
 <div class="sidebar">
 	
-	<form class="usersearch" action="search.php">
+	<form class="usersearch" action="usersearch.php">
 		<h3 class="us-title">Who are you looking for?</h3>
 		<input class="us-input" id="user" type="text" placeholder="User name to search for" />
 		<input class="us-submit" type="submit">
@@ -265,7 +265,7 @@ In this case use a descriptive name of each individual module and prefix its chi
 </div>
 ```
 
-Avoid multiple unsemantic and purely presentational classes like this:
+Avoid multiple unsemantic and purely presentational classes like these:
 
 ``` html
 <ul class="clearfix grid grid-12 rounded">…</ul>
