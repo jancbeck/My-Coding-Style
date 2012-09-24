@@ -79,6 +79,22 @@ When mixing PHP and HTML together, indent PHP blocks to match the surrounding HT
 <?php endif; ?>
  ```
  
+When appropriate wrap each part of a template function into individual PHP-blocks instead of one big block so they can easily be moved around:
+
+``` html
+<div class="page">
+
+	<?php get_header(); ?>
+		
+	<?php get_article(); ?>
+	
+	<?php get_sidebar(); ?>
+	
+	<?php get_footer(); ?>
+	
+</div>
+ ```
+ 
 ## 3. Comments
 
 Comments should explain code as needed, where necessary.
