@@ -28,6 +28,9 @@ I have read many great style guides over the years and it's undeniable that my o
 * [idiomatic CSS by Nicolas Gallagher](https://github.com/necolas/idiomatic-css)
 * [WordPress Core Contributor Handbook: CSS](http://make.wordpress.org/core/handbook/coding-standards/css/)
 * [Fellowship Technology Code Standards](http://developer.fellowshipone.com/patterns/code.php)
+* [CSS Wizardry: My HTML/CSS coding style](http://csswizardry.com/2012/04/my-html-css-coding-style/)
+* [Scalable and Modular Architecture for CSS](http://smacss.com/)
+* [ThinkUp: Code Style Guide: CSS](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide:-CSS)
 
 
 ## License
