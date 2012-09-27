@@ -215,7 +215,7 @@ Landmarks are ment to signalize individual parts of your document. That means yo
 
 ### IDs
 
-IDs shall be used as a way to easily hook JavaScript actions to DOM-Elements or/and gain performance boosts when using native element query methods.
+IDs shall be used for anchor navigation, linking labels to form fields or as a way to easily hook JavaScript actions to DOM-Elements or/and gain performance boosts by using native element query methods.
 
 Consider the following markup:
 
@@ -230,7 +230,7 @@ Consider the following markup:
 We can use jQuery to attach a handler to all links in this menu in a performant way using native browser select algorithms:
 
 ``` javascript
-$('#navigation').find('a').click(fn);
+$('#navigation').find('a').click(fn); // uses document.getElementById() internally
 ```
 
 Furthermore classes should be used instead of IDs because they can cause problems with specificity in CSS rules later.
