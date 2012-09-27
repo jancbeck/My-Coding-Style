@@ -67,7 +67,7 @@ When mixing PHP and HTML together, indent PHP blocks to match the surrounding HT
 
 <!-- Taken from http://developer.fellowshipone.com/patterns/code.php -->
 
-``` html
+``` php
 <?php if ( $attachments ) : ?>
 
 	<ul class="images">
@@ -85,7 +85,7 @@ When mixing PHP and HTML together, indent PHP blocks to match the surrounding HT
  
 When appropriate wrap each part of a template function into individual PHP-blocks instead of one big block so they can easily be moved around:
 
-``` html
+``` php
 <div class="page">
 
 	<?php get_header(); ?>
