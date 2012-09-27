@@ -20,6 +20,10 @@
 
 ------------------------------------------------
 
+## Preface
+
+From all layers of progressive enhancement (markup, presentation, behavior) markup is probably the most overlooked yet it is often the one that is the hardest to change after its initial write-down. In the final production environment HTML might be be generated from multiple origins and dependencies are often unforseeable. Giving your HTML code a minute more of a thought can save you 10 minutes of fiddling with CSS and 1 hour of debugging JavaScript and/or IE.
+
 
 ## 1. Validity
 
