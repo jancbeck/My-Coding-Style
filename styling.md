@@ -158,8 +158,8 @@ h1,
 
 ### Declarations
 
-When grouping declarations use seperate lines for each declaration. End each declaration with a semicolon. Put a space between property and value.
-**Modifiers:** When a there is only one selector *and* only one declaration inside a rule you may write it as a single line.
+When grouping declarations use seperate lines for each declaration. Always end declarations with a semicolon. Put a space between property and value.
+**Modifiers:** When there is only one selector *and* only one declaration inside a rule you may write it as a single line.
 
 ```css
 
@@ -168,6 +168,6 @@ When grouping declarations use seperate lines for each declaration. End each dec
 	clear: both;
 	background: #eee;
 }
-.hidden { display: none }
+.hidden { display: none; }
 
 ```
