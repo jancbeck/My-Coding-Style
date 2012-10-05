@@ -1,7 +1,6 @@
 # My Coding Style
 
-
-## The purpose of this document is to foster a more coherent coding style in languages that I use on a daily basis (HTML, CSS, JavaScript, PHP). I came to the conclusion that both creating as well as *trying* to follow an own coding standards guide will help me become a bit of a better programmer. This document is a work in progress.
+ The purpose of this document is to foster a more coherent coding style in languages that I use on a daily basis (HTML, CSS, JavaScript, PHP). I came to the conclusion that both *creating* as well as *trying to follow* an own coding standards guide will help me become a bit of a better programmer. This document is a work in progress.
 
 
 ## Contents
@@ -12,7 +11,7 @@
 * [Serving (PHP)](https://github.com/jancbeck/My-Coding-Style/blob/master/serving.md)
 
 
-## Credits
+## Acknowledgements
 
 I have read many great style guides over the years and it's undeniable that my own style is based on the following spadework:
 
@@ -35,6 +34,6 @@ I have read many great style guides over the years and it's undeniable that my o
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Principles of Writing Consistent, Idiomatic Web Code</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/jancbeck/My-Coding-Style" property="cc:attributionName" rel="cc:attributionURL">Jan Beck</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">My Coding Style - Principles of Writing Consistent, Idiomatic Web Code</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/jancbeck/My-Coding-Style" property="cc:attributionName" rel="cc:attributionURL">Jan Beck</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
 
-This applies to all documents in this repository.
+This applies to all documents in this repository if not otherwise marked as property of others.
