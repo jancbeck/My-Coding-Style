@@ -108,6 +108,6 @@ theme
     ├── typography.less   // font settings, headings, lists…
     └── variables.less    // LESS vars
 ```
-Note that the `css` directory remains untouched as it's just an output directory for the LESS compiler be it local or on the server. All changes happen in the less directory.
+Note that the `css` directory remains untouched as it's just an output directory for the LESS compiler be it local or on the server. All changes happen in the `less` directory.
 
 <!-- TODO: How would this look like for the goldilocks approach or responsive websites in general? -->
