@@ -3,9 +3,9 @@
 
 ## Table of Contents
 
-0. General Principles
-1. Validity
-2. Indentation
+1. General Principles
+2. Validity
+3. Indentation
 	1. Spaces & Tabs 
 	2. Block, Inline and Groups
 	3. PHP in HTML
@@ -310,7 +310,7 @@ Instead use one semantic class and attach classes using a preprocessor.
 ``` css
 /* using LESS */
 .recent-articles { 
-	.clearfix;
+	.clearfix();
 	.grid(12);
 	.border-radius(5px);
 }
