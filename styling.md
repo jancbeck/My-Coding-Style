@@ -8,14 +8,15 @@
 3. Validity
 4. Comments
 5. File Organization
-6. Formatting 
+6. Code Formatting 
 	1. Selectors 
 	2. Declarations
 	3. Blocks
 	4. Declaration order
-7. Property & Value Notation
+7. Coding Practice
 	1. Pixels vs. Ems vs. Percentage
-8. CSS3
+	2. Specificity
+	3. CSS3
 
 ------------------------------------------------
 
@@ -33,7 +34,7 @@ As a general rule of thumb use what ever is necessary to make your website look 
 
 ## 4. Comments
 
-** Rever to Nicolas Gallaghers tips about writing comments:** https://github.com/necolas/idiomatic-css#3-comments
+** Rever to Nicolas Gallaghers tips about writing comments: https://github.com/necolas/idiomatic-css#3-comments **
 
 Well commented code is extremely important. Take time to describe components,
 how they work, their limitations, and the way they are constructed. Don't leave
@@ -79,6 +80,9 @@ comment patterns.
  */
 
 /* Basic comment */
+
+/* @group Espresso Navigator Group */
+/* @end */
 ```
 
 
@@ -141,7 +145,7 @@ Don't use a separate print.css file. Include your print styles inside your one m
 }
 ```
 
-## 6. Formatting 
+## 6. Code Formatting  
 
 ### Selectors
 
@@ -171,3 +175,25 @@ When grouping declarations use seperate lines for each declaration. Always end d
 .hidden { display: none; }
 
 ```
+
+## 7. Coding Practice
+
+### Pixels vs. Ems vs. Percentage
+
+Avoid overuling the font-size of an element more than 2 times especially when using ems. Typically you would set  the font-size once for the `body` element and then for the element you want the style to apply to.
+
+LESS mixins make using ems more intuitive:
+
+```css
+@basefont: 14;
+ 
+.font-size( @target: @basefont, @context: @basefont ) {
+	font-size: ( @target / @context ) + 0em;
+}
+body {
+	font-size: @basefont + 0em;
+}
+.widget-title {
+	.font-size(24);  // 24px
+}
+``
